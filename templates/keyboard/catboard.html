@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}Keyboard{% endblock %}
+{% block id %}keyboard{% endblock %}
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<article>
+				<div class="title">
+					<h1>Catboard 2</h1>
+					<div class="input select rating">
+						<select id="rating" name="rating">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7" selected="selected">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+				</div>
+				<div class="published"> 4 июля 2013 в 11:39</div>
+				<section>
+					{% include "keyboard/_catboard.html" %}
+				</section>
+				<ul class="tags">
+					<h4>Тэги</h4>
+					<li><a href="http://habrahabr.ru/search/?q=%5Bcatboard%5D&amp;target_type=posts" rel="tag">#catboard</a></li>
+					<li>, <a href="http://habrahabr.ru/search/?q=%5BDIY%5D&amp;target_type=posts" rel="tag">#DIY</a></li>
+					<li>, <a href="http://habrahabr.ru/search/?q=%5B%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0%5D&amp;target_type=posts" rel="tag">#клавиатура</a></li>
+					<li>, <a href="http://habrahabr.ru/search/?q=%5Bkeyboard%5D&amp;target_type=posts" rel="tag">#keyboard</a></li>
+					<li>, <a href="http://habrahabr.ru/search/?q=%5B%D1%81%D0%B2%D0%BE%D0%B8%D0%BC%D0%B8%20%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8%5D&amp;target_type=posts" rel="tag">#своими руками</a></li>
+					<li>, <a href="http://habrahabr.ru/search/?q=%5Bhandmade%5D&amp;target_type=posts" rel="tag">#handmade</a></li>
+					<li>, <a href="http://habrahabr.ru/search/?q=%5Bcherry%20mx%5D&amp;target_type=posts" rel="tag">#cherry mx</a></li>
+					<li>, <a href="http://habrahabr.ru/search/?q=%5Balps%5D&amp;target_type=posts" rel="tag">#alps</a></li>
+				</ul>
+			</article>
+			{% include "_comments.html" %}
+		</div>
+		<div class="col-sm-4">
+			<h3>Команда</h3>
+			<!-- owner -->
+			<h4>Автор</h4>
+			<a href="/users/ibnteo">@ibnteo</a>
+			<!-- maintainer -->
+			<h4>Ведущий разработчик</h4>
+			<a href="/users/ibnteo">@ibnteo</a>
+			<!-- developers  -->
+			<h4>Разработчики</h4>
+			<a href="/users/suenot">@suenot</a>,
+			<a href="/users/suenot">@lev.mishin</a>
+			<!-- contirbutors -->
+			<h4>Помощники</h4>
+			<a href="/users/suenot">@nylithius</a>,
+			<a href="/users/suenot">@nylithius</a>,
+			<a href="/users/suenot">@nylithius</a>,
+			<a href="/users/suenot">@nylithius</a>,
+			<a href="/users/suenot">@nylithius</a>,
+			<a href="/users/suenot">@nylithius</a>,
+			<a href="/users/suenot">@nylithius</a>,
+			<a href="/users/suenot">@nylithius</a>
+			<h3>Ссылки</h3>
+			<a href="https://github.com/ibnteo/catboard">#github</a>,
+			<a href="http://habrahabr.ru/post/185500/">#habrahabr</a>,
+			<a href="http://geekhack.org/index.php?topic=38857.0">#geekhack</a>,
+			<a href="http://vk.com/catboard">#vk</a>,
+			<a href="/users/suenot">#facebook</a>,
+			<a href="/users/suenot">#twitter</a>,
+			<a href="/users/suenot">#github</a>,
+			<a href="/users/suenot">#github</a>,
+			<a href="/users/suenot">#github</a>,
+			<a href="/users/suenot">#github</a>,
+			<h3>Дата создания: 01.06.2013</h3>
+			<h3>Дата создания: 01.06.2013</h3>
+			<!-- <h3>Цена</h3> -->
+			<h3>Предварительная цена</h3>
+			<p>За собранный вариант: 8000 руб.</p>
+			<p>Самостоятельная сборка: 5000 руб.</p>
+			<button class="btn btn-default">Предзаказ</button>
+			<button class="btn btn-default">Нравится</button>
+			<button class="btn btn-default">У меня она есть</button>
+		</div>
+	</div>
+</div>
+{% endblock %}

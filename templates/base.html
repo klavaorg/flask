@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}Фаблаб Москва{% endblock %}</title>
+		<link href="/static/css/bootstrap.css" rel="stylesheet">
+		<link href="/static/js/vendor/fotorama/fotorama.css" rel="stylesheet">
+		<link href="/static/js/vendor/socials/social-likes_birman.css" rel="stylesheet">
+		<link href="/static/css/screen.css" rel="stylesheet">
+		<link rel="shortcut icon" href="/static/img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="/static/img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/static/img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/static/img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/static/img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/static/img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/static/img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/static/img/favicons/apple-touch-icon-152x152.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body class="{% block id %}{% endblock %}">
+		<header class="header">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="/"><img src="/static/img/logos/klavaorg.png" alt="Фаблаб Москва"></a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex8-collapse">
+							<div class="navbar-header-button-icon">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</div>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-ex8-collapse">
+						<ul class="nav navbar-nav navbar-middle">
+							<li><a href="/keyboards">Клавиатуры</a></li>
+							<li><a href="/layouts">Раскладки</a></li>
+							<li><a href="/trainings">Тренажеры</a></li>
+							<li><a href="/users">Пользователи</a></li>
+							<li><a href="/shops">Магазины</a></li>
+							<li><a href="/wiki">Wiki</a></li>
+							<li><a href="/login">Войти</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main role="main">
+			{% block content %}{% endblock %}
+		</main>
+		<footer class="footer ss-style-castle">
+			<div class="container">
+				<p>
+					<a href="http://ibnteo.klava.org">@ibnteo</a>, <a href="http://suenot.klava.org">@suenot</a>, <a href="http://nylithius.klava.org">@nylithius</a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="/links">Медиа</a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="/links">О нас</a>
+				</p>
+				<div class="social-likes">
+					<div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+					<div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+					<div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+					<div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+					<div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+					<div class="pinterest" title="Поделиться картинкой на Пинтересте" data-media="http://fablab77.ru/img/photo/russian-fablab.jpg">Pinterest</div>
+				</div>
+				<!-- <li><a href="#">vkontakte</a></li> -->
+				<!-- <li><a href="#">facebook</a></li> -->
+				<!-- <li><a href="#">github</a></li> -->
+				<!-- <li><a href="#">geekhack.org</a></li> -->
+				<!-- <li><a href="#">deskthority.net</a></li> -->
+				<!-- <li><a href="#">thingverse?</a></li> -->
+			</div>
+		</footer>
+	</body>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="/static/js/vendor/fotorama/fotorama.js"></script>
+	<script src="/static/js/vendor/jquery.barrating.js"></script>
+	<script src="/static/js/vendor/socials/social-likes.min.js"></script>
+	<script src="/static/js/all.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-34687389-5', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter26224653 = new Ya.Metrika({id:26224653,
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true});
+				} catch(e) { }
+			});
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript>
+		<div><img src="//mc.yandex.ru/watch/26224653" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+</html>
